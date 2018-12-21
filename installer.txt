@@ -1,0 +1,9 @@
+sudo pacman -Sy docker xclip zsh chrome emacs jq aws-cli
+
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+yay -Sy yubikey-manager yubico-yubioath-desktop slack-desktop jdk8 jre8 kubectl-bin 
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo systemctl enable docker
