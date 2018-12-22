@@ -1,4 +1,4 @@
-sudo pacman -Sy docker xclip zsh chrome emacs jq aws-cli
+sudo pacman -Sy docker xclip zsh chrome emacs jq aws-cli virtualbox-host-modules-arch
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
