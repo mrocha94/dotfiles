@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+#  export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/mateus/.oh-my-zsh"
@@ -68,6 +68,17 @@ plugins=(
   common-alias
   lein
   sudo
+  tmux
+  archlinux
+  themes
+  pj
+  docker
+  extract
+  history
+  jsontools
+  pip
+  vscode
+  git-extras
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -107,3 +118,14 @@ source /home/mateus/.nurc
 export PATH="$PATH:$HOME/.rvm/bin"
 
 source /home/mateus/.profile
+PROJECT_PATHS=($NU_HOME)
+
+# named directories
+hash -d nd=~/dev/nu/
+
+# nucli autocompletion
+autoload bashcompinit && bashcompinit
+source "$NU_HOME/nucli/nu.bashcompletion"
+
+# opam configuration
+test -r /home/mateus/.opam/opam-init/init.zsh && . /home/mateus/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
