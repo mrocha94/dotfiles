@@ -2,8 +2,9 @@ sudo pacman -Sy docker xclip zsh emacs jq aws-cli virtualbox code firefox nodejs
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
-yay -Sy yubikey-manager yubico-yubioath-desktop slack-desktop jdk8 jre8 kubectl-bin google-chrome forticlientsslvpn
+yay -Sy yubikey-manager yubico-yubioath-desktop slack-desktop jdk8 jre8 kubectl-bin google-chrome forticlientsslvpn fzf pinta docker-compose shell-check
 
 sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo systemctl enable docker
+sudo system enable pcscd
